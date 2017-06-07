@@ -15,5 +15,5 @@ module.exports = (gulp, plugins, config) => () => {
                 doctypeDeclaration: false
             }
         }))
-        .pipe(gulp.dest(`./${config.paths.dist}/${config.output.images}/svg`))
+        .pipe(gulp.dest(`./${config.paths.dist}/${config.output.images}`))
 };

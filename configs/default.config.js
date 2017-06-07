@@ -8,7 +8,13 @@ module.exports = {
         entry: './src/js/index.jsx',
         js: './src/js/**/*.jsx',
         html: './templates/**/*.{html|ss}',
-        dist: './assets'
+        dist: './assets',
+        vendor: {
+            // include dependencies
+            dependencies: [],
+            // name of the bundle to be combine all dependencies into one file
+            bundleName: 'vendor.js'
+        }
     },
     output: {
         js: 'js',
@@ -19,7 +25,8 @@ module.exports = {
         //server: config.paths.dist,
         proxy: {
             // change your web host
-            target: 'http://your-app.dev'
+            // target: 'http://your-app.dev'
+            target: 'http://femtika.dev'
         }
     }
 };

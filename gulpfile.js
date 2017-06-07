@@ -9,12 +9,12 @@ register(gulp, plugins, config)({
     'lint:scss': 'lint-scss',
     'build:scss': 'build-scss',
     'build:js': 'build-js',
+    'build:vendor': 'build-vendor-js',
     'build:svg': 'build-svg',
-    //'copy': 'copy',
+    'copy': 'copy',
     'watch': 'watch',
     'serve': 'serve'
 });
 
-//gulp.task('build', gulp.parallel('build:js', 'build:scss', 'build:svg', 'copy'));
-gulp.task('build', gulp.parallel('build:js', 'build:scss', 'build:svg'));
+gulp.task('build', gulp.parallel('build:js', 'build:scss', 'build:svg')); // 'copy', 'build:vendor'
 gulp.task('default', gulp.series('build', gulp.parallel('watch', 'serve')));
