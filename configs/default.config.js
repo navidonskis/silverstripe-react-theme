@@ -26,8 +26,7 @@ module.exports = {
         //server: config.paths.dist,
         proxy: {
             // change your web host
-            // target: 'http://your-app.dev'
-            target: 'http://femtika.dev'
+            target: 'http://your-app.dev'
         }
     }
 };

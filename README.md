@@ -19,3 +19,27 @@ Available `gulp` parameters (tasks):
 | `serve` | task will serve proxy and opens in the browser. To setup your project - open `configs/default.config.js` and change `browserSync.serve` if you will using files as `html` example, or `browserSync.proxy` within you host name of the SilverStripe project. |
 | `default` | default task or empty `gulp` command will run `build` and `watch`, `serve` tasks. |
 
+## Package structure
+
+```
+    assets/ # dist files which can be include via Requirements
+    configs/ # gulp configuration
+    └───tasks/ # all gulp tasks
+    └───utils/ # utilities for gulp configuration
+    │   default.config.js # package configuration file for the gulp (paths, filenames, etc)
+    │   webpack.config.js # default javascript loader settings
+    │   webpack.vendor.config.js # default vendor javascript loader settings
+    docs/ # documentation of the package
+    src/ # all client based scripts (untranspiled)
+    └───images/
+    │   └───svg/ # all svg files to be converted as sprite.svg
+    └───js/
+    │   └───components/ # react component class'es
+    │   └───core/ # default core class'es of the package
+    │   index.jsx # default script of the project
+    └───sass/ # .scss files should be included
+    templates/ # all SilverStripe template files of *.ss
+    gulpfile.js # default file of the gulp to be executable
+    package.json # all dependencies of template
+    scsslint.yml # configuration of the sass rules
+```
