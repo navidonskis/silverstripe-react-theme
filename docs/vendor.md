@@ -3,7 +3,7 @@
 task are the same like `build:js`, but this one can be add a set of collections of 
 dependencies. In the `configs/default.config.js`:
 
-```json
+```
 {
   vendor: {
     // include dependencies
