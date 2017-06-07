@@ -1,10 +1,11 @@
 const path = require('path');
 const webpack = require('webpack-stream').webpack;
+const config = require('./default.config');
 
 module.exports = {
     devtool: 'cheap-module-inline-source-map',
     output: {
-        filename: 'bundle.js'
+        filename: config.output.jsBundleName
     },
     module: {
         loaders: [{

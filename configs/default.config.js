@@ -17,6 +17,7 @@ module.exports = {
         }
     },
     output: {
+        jsBundleName: 'app.js',
         js: 'js',
         css: 'css',
         images: 'images'
