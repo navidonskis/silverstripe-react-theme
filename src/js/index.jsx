@@ -10,12 +10,7 @@ const components = [
 ];
 
 components.forEach(component => {
-    let element = document.querySelector(`*[data-component="${component.name}"]`);
-
-    if (element) {
-        ReactDOM.render(
-            <{component.class} />,
-            element
-        );
-    }
+    [].forEach.call(document.querySelectorAll(`*[data-component="${component.name}"]`), (element) => {
+        ReactDOM.render(<{component.class} />, element);
+    });
 });
