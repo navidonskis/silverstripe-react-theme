@@ -4,9 +4,9 @@
 
         <div class="content">
             $Content
-
-            <div id="root"></div>
         </div>
     </article>
     $Form
 </div>
+
+<div data-component="hello"></div>
