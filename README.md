@@ -16,7 +16,7 @@ Available `gulp` parameters (tasks):
 | [`build:vendor`](docs/vendor.md) | task are the same like `build:js` but this one can be add a set of collections of dependencies in the `configs/default.config.js` `paths.vendor.dependencies`. |
 | `build:svg` | add your `svg` images to `src/images/svg` and run this command to build `sprite.svg` file which will be at `assets/images/`. |
 | `watch` | task will watch `build:js`, `build:scss`, `build:svg` tasks (file changes) and re-run. |
-| `serve` | task will serve proxy and opens in the browser. To setup your project - open `configs/default.config.js` and change `browserSync.serve` if you will using files as `html` example, or `browserSync.proxy` within you host name of the SilverStripe project. |
+| `serve` | task will serve proxy and opens in the browser. To setup your project - open `configs/default.config.js` and change `browserSync.serve` if you will using files as `html` or `browserSync.proxy` within your host name of the SilverStripe project instead. |
 | `default` | default task or empty `gulp` command will run `build` and `watch`, `serve` tasks. |
 
 ## Package structure
