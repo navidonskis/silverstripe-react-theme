@@ -1,5 +1,5 @@
 import React from 'react';
-import Component from '../core/component.jsx';
+import Component from '../core/component.js';
 
 export default class Hello extends Component {
     render() {

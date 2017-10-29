@@ -43,3 +43,9 @@ Available `gulp` parameters (tasks):
     package.json # all dependencies of template
     scsslint.yml # configuration of the sass rules
 ```
+
+## TODO:
+
+ 1. Add some default styles (maybe implement with [Google Material Component](https://material.io/components/).
+ 2. Refactor `build:js` task to be more friendly with environments. (i mean when it's using live environment switch some minifies for it).
+ 3. Add reusing components (social share, newsletter, basic AJAX forms).
