@@ -5,8 +5,8 @@ module.exports = {
         svg: './src/images/svg/**/*.svg',
         sass: './src/sass/**/*.scss',
         scsslint: './scsslint.yml',
-        entry: './src/js/index.jsx',
-        js: './src/js/**/*.jsx',
+        entry: './src/js/index.js',
+        js: './src/js/**/*.js',
         html: './templates/**/*.{html|ss}',
         dist: './assets',
         vendor: {
