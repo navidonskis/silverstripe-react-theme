@@ -9,4 +9,5 @@
     $Form
 </div>
 
+<%-- this will load React Component --%>
 <div data-component="hello"></div>
