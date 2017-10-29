@@ -16,6 +16,9 @@ module.exports = {
             bundleName: 'vendor.js'
         }
     },
+    sass: {
+        version: ['last 2 versions']
+    },
     output: {
         jsBundleName: 'app.js',
         js: 'js',

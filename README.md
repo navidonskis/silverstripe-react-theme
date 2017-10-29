@@ -11,7 +11,7 @@ Available `gulp` parameters (tasks):
 | Parameter | Description |
 |-----------|-------------|
 | `build` | build SASS, Javascript's, Vendors, SVG's |
-| `build:scss` | search for the changes and building the SASS files. If you want to create as new styles file, just add `file-name.scss` without `_` (`_file-name.scss`). Task will also use `lint:scss` task to ensure SASS lint rules. |
+| [`build:scss`](docs/build-scss.md) | search for the changes and building the SASS files. If you want to create as new styles file, just add `file-name.scss` without `_` (`_file-name.scss`). Task will also use `lint:scss` task to ensure SASS lint rules. |
 | [`build:js`](docs/build-js.md) | task will check `src/js/index.js` file and compare with bundle. Use `ES6` and `React` to import components into file. |
 | [`build:vendor`](docs/vendor.md) | task are the same like `build:js` but this one can be add a set of collections of dependencies in the `configs/default.config.js` `paths.vendor.dependencies`. |
 | `build:svg` | add your `svg` images to `src/images/svg` and run this command to build `sprite.svg` file which will be at `assets/images/`. |
