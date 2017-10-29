@@ -13,10 +13,10 @@ export default class Component extends React.Component {
     constructor(...args) {
         super(args);
 
-        let metaToken = document.querySelector('meta[name="X-CSRF-TOKEN"]');
+        let metaToken = document.querySelector('meta[name="X-Csrf-Token"]');
 
         if (metaToken) {
-            axios.defaults.headers.common['X-CSRF-TOKEN'] = metaToken.getAttribute('content');
+            axios.defaults.headers.common['X-Csrf-Token'] = metaToken.getAttribute('content');
         }
 
         this.ajax = axios;
