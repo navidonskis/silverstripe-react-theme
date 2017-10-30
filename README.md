@@ -2,9 +2,22 @@
 
 This is React Starter Kit using gulp transpiler for SilverStripe CMS.
 
+## Installation
+
+```bash
+# run command to fetch all dependencies
+npm install
+```
+
+## Configuration
+
+Open [`configs/default.config.js`](configs/default.config.js#L32) file to configurate your project. Most important is `browserSync` options of proxy target, in the example by default is `http://your-app.dev`. So set your own by your host name.
+
+Other options for SASS and Javascript check individually on the doc's page (see `usage` section).
+
 ## Usage
 
-Run `npm install` to fetch all dependencies. Open `configs/default.config.js` to configure by your opinions as most important are `browserSync` options of proxy target, in the example by default is `http://your-app.dev` set, set your own by your host name. Then run command `gulp` to listen your changes.
+Run command `gulp` to listen your changes.
 
 Available `gulp` parameters (tasks):
 
