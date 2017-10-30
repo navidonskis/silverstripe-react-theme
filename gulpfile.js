@@ -9,6 +9,7 @@ register(gulp, plugins, config)({
     'lint:scss': 'lint-scss',
     'build:scss': 'build-scss',
     'build:js': 'build-js',
+    'build:js:prod': 'build-js-prod',
     'build:vendor': 'build-vendor-js',
     'build:svg': 'build-svg',
     'copy': 'copy',

@@ -15,5 +15,12 @@ module.exports = {
             exclude: /node_modules/
         }]
     },
-    plugins: []
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {warnings: false},
+            comments: false,
+            minimize: false
+        }),
+        new webpack.optimize.AggressiveMergingPlugin()
+    ]
 };
