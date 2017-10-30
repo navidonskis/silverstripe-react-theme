@@ -1,6 +1,5 @@
 'use strict';
 
-
 const webpackStream = require('webpack-stream');
 const webpackConfig = require('../webpack.config');
 
