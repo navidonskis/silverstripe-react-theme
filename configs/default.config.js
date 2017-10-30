@@ -21,6 +21,7 @@ module.exports = {
     },
     output: {
         jsBundleName: 'app.js',
+        jsProdBundleName: 'app.min.js',
         js: 'js',
         css: 'css',
         images: 'images'
